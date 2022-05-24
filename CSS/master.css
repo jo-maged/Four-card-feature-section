@@ -90,7 +90,6 @@ section div img{
 }
 @media (max-width: 375px){
     .parent{
-        height: 1440px;
         width: 375px;
         background-color: #fafafa;
         display: flex;
