@@ -1,0 +1,182 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+.parent{
+    width: 1440px;
+    height: 922px;
+    background-color: #fafafa;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+    font-family: 'Poppins', sans-serif;
+}
+header{
+    width: 100%;
+    height: calc(25% - 50px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+header p:nth-of-type(1){
+    font-size: 30px;
+    font-weight: 200;
+    color: hsl(229, 6%, 66%);
+}
+header p:nth-of-type(2){
+    font-weight: 600;
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: hsl(234, 12%, 34%);
+}
+header p:nth-of-type(3){
+    width: 540px;
+    text-align: center;
+    color: hsl(229, 6%, 66%);
+    font-size: 15px;
+}
+section{
+    height: calc(100% - 50px);
+    width: 100%;
+    position: relative;
+    padding: 70px;
+}
+section div{
+    width: 350px;
+    height: 250px;
+    background-color: white ;
+    margin: 20px;
+    padding: 30px;
+    border-radius: 5px;
+    position: absolute;
+    box-shadow: 0px 7px 15px -1px hsl(229, 6%, 66%);
+}
+section div:nth-of-type(1){
+    border-top: 4px solid hsl(180, 62%, 55%);
+    top: 50%;
+    transform: translateY(-50%);
+    left: 115px;
+}
+section div:nth-of-type(2){
+    border-top: 4px solid hsl(0, 78%, 62%);
+    left: 50%;
+    transform: translateX(-50%);
+}
+section div:nth-of-type(3){
+    border-top: 4px solid hsl(212, 86%, 64%);
+    top: 50%;
+    transform: translateY(-50%);
+    right: 75px;
+}
+section div:nth-of-type(4){
+    border-top: 4px solid hsl(34, 97%, 64%);
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+section div h3{
+    color: hsl(234, 12%, 34%);
+    margin-bottom: 10px;
+}
+section div p{
+    color: hsl(229, 6%, 66%);
+    font-size: 14px;
+}
+section div img{
+    width: 64px;
+    height: 64px;
+    position: absolute;
+    bottom: 25px;
+    right: 25px;
+}
+@media (max-width: 375px){
+    .parent{
+        height: 1440px;
+        width: 375px;
+        background-color: #fafafa;
+        display: flex;
+        flex-direction: column;
+        padding: 30px;
+        font-family: 'Poppins', sans-serif;
+    }
+    header{
+        width: 100%;
+        height: calc(25% - 30px);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    header p:nth-of-type(1){
+        font-size: 25px;
+        font-weight: 200;
+        color: hsl(229, 6%, 66%);
+    }
+    header p:nth-of-type(2){
+        font-weight: 600;
+        font-size: 25px;
+        margin-bottom: 20px;
+        color: hsl(234, 12%, 34%);
+    }
+    header p:nth-of-type(3){
+        width: 315px;
+        color: hsl(229, 6%, 66%);
+        font-size: 16px;
+    }
+    section{
+        height: calc(100% - 30px);
+        display: flex;
+        flex-direction: column;
+        padding: 0px;
+        position: relative;
+    }
+    section div{
+        width: 310px;
+        height: 250px;
+        background-color: white ;
+        padding: 30px;
+        border-radius: 5px;
+        position: relative;
+        box-shadow: 0px 7px 15px -1px hsl(229, 6%, 66%);
+    }
+    section div:nth-of-type(1){
+        border-top: 4px solid hsl(180, 62%, 55%);
+        transform: translate(0px ,0px);
+        top: 0px;
+        bottom: 0px;
+        left: 0px;
+        right: 0px;
+        margin: 20px 0px;
+    }
+    section div:nth-of-type(2){
+        border-top: 4px solid hsl(0, 78%, 62%);
+        transform: translate(0px ,0px);
+        top: 0px;
+        bottom: 0px;
+        left: 0px;
+        right: 0px;
+        margin: 20px 0px;
+    }
+    section div:nth-of-type(3){
+        border-top: 4px solid hsl(212, 86%, 64%);
+        transform: translate(0px ,0px);
+        top: 0px;
+        bottom: 0px;
+        left: 0px;
+        right: 0px;
+        margin: 20px 0px;
+    }
+    section div:nth-of-type(4){
+        border-top: 4px solid hsl(34, 97%, 64%);
+        transform: translate(0px ,0px);
+        top: 0px;
+        bottom: 0px;
+        left: 0px;
+        right: 0px;
+        margin: 20px 0px;
+    }
+}
