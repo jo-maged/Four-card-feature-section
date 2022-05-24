@@ -91,6 +91,7 @@ section div img{
 @media (max-width: 375px){
     .parent{
         width: 375px;
+        height: fit-content;
         background-color: #fafafa;
         display: flex;
         flex-direction: column;
